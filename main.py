@@ -1,4 +1,5 @@
 from flask import Flask
+import os
 
 app = Flask(__name__)
 
@@ -6,9 +7,6 @@ app = Flask(__name__)
 def hello():
     return "Hello, World!"
 
-if __name__ == "__main__":
-    app.run(debug=False)
-    
 if __name__ == "__main__":
     # Get the port number from the environment variable or default to 5000
     port = int(os.environ.get("PORT", 5))
