@@ -9,9 +9,9 @@ def hello():
 
 if __name__ == "__main__":
     # Get the port number from the environment variable or default to 5000
-    port = int(os.environ.get("PORT", 8080))
+    # port = int(os.environ.get("PORT", 8080))
 
     # Print the port number
-    print(f"Running on port {port}")
+    # print(f"Running on port {port}")
 
-    app.run(debug=False, host='0.0.0.0', port=port)
+    app.run(debug=False, host='0.0.0.0')
